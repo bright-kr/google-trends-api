@@ -1,6 +1,6 @@
 # Google Trends Scraper API
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/trends)
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/trends)
 
 이 리포지토리는 Google Trends 데이터를 수집하기 위한 두 가지 접근 방식을 제공합니다:
 
@@ -28,7 +28,7 @@
 
 ## Free Scraper
 
-<img width="700" alt="bright-data-google-trends-api-screenshot-google-trends-page" src="https://github.com/luminati-io/google-trends-api/blob/main/images/418445062-2168a20d-a588-454e-a682-a6bba3e4e460.png" />
+<img width="700" alt="bright-data-google-trends-api-screenshot-google-trends-page" src="https://github.com/bright-kr/google-trends-api/blob/main/images/418445062-2168a20d-a588-454e-a682-a6bba3e4e460.png" />
 
 소규모 데이터 수집 프로젝트를 위한 간단한 Google Trends 스크레이퍼입니다.
 
@@ -49,7 +49,7 @@ playwright install
 >
 
 ### Quick Start
-1. [google-trends-scraper.py](https://github.com/luminati-io/Google-Trends-Scraper-API/blob/main/google-trends-scraper/google-trends-scraper.py)에서 다음 변수를 편집합니다:
+1. [google-trends-scraper.py](https://github.com/bright-kr/Google-Trends-Scraper-API/blob/main/google-trends-scraper/google-trends-scraper.py)에서 다음 변수를 편집합니다:
 ```python
 query = "cryptocurrency"  # Your search term
 geo = "US"                # Country code
@@ -71,7 +71,7 @@ hl = "en-US"              # Language code
 }
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Trends-Scraper-API/tree/main/google-trends-results)을 확인하십시오.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Trends-Scraper-API/tree/main/google-trends-results)을 확인하십시오.
 
 
 ### Limitations
@@ -100,7 +100,7 @@ hl = "en-US"              # Language code
 1. **사전 준비**:
     - [Bright Data 계정](https://brightdata.co.kr/)을 생성합니다(신규 사용자는 $5 크레딧 제공)
     - [API key](https://docs.brightdata.com/general/account/api-token)를 발급받습니다
-2. **Setup**: API를 통합하려면 당사의 [단계별 가이드](https://github.com/luminati-io/Google-Trends-Scraper-API/blob/main/setup-serp-api-guide.md)를 따르십시오
+2. **Setup**: API를 통합하려면 당사의 [단계별 가이드](https://github.com/bright-kr/Google-Trends-Scraper-API/blob/main/setup-serp-api-guide.md)를 따르십시오
 3. **구현 방식**:
     - Direct API Access
     - Native Proxy-Based Access
@@ -148,7 +148,7 @@ print("Response saved to 'serp_direct_api.json'.")
 
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Trends-Scraper-API/blob/main/google-trends-api-results/serp_direct_api.json)을 확인하십시오.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Trends-Scraper-API/blob/main/google-trends-api-results/serp_direct_api.json)을 확인하십시오.
 
 > **참고:** 파싱된 JSON을 위해 `brd_json=1`을 사용하십시오. `geo` 및 `brd_trends`와 같은 추가 パラメータ는 아래 Advanced Features 섹션에서 설명합니다.
 > 
@@ -193,7 +193,7 @@ print("Response saved to 'serp_native_proxy.json'.")
 
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Trends-Scraper-API/blob/main/google-trends-api-results/serp_native_proxy.json)을 확인하십시오.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Trends-Scraper-API/blob/main/google-trends-api-results/serp_native_proxy.json)을 확인하십시오.
 
 > **참고:** 프로덕션 환경에서는 당사의 [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)에 설명된 대로 Bright Data의 SSL 인증서를 로드하십시오.
 >
@@ -201,7 +201,7 @@ print("Response saved to 'serp_native_proxy.json'.")
 ## Advanced Features
 
 ### Widgets
-<img width="700" alt="bright-data-google-trends-api-screenshot-timeseries-and-geomap" src="https://github.com/luminati-io/google-trends-api/blob/main/images/418487699-20fd3ec5-b152-4e70-bee3-b093b7d78b86.png" />
+<img width="700" alt="bright-data-google-trends-api-screenshot-timeseries-and-geomap" src="https://github.com/bright-kr/google-trends-api/blob/main/images/418487699-20fd3ec5-b152-4e70-bee3-b093b7d78b86.png" />
 
 Google Trends는 의미 있는 인사이트를 추출하기 위한 다양한 위젯을 제공합니다. `brd_trends` パラメータ를 사용하여 원하는 위젯을 지정할 수 있습니다:
 
@@ -233,7 +233,7 @@ curl --proxy brd.superproxy.io:33335 \
 ```
 
 ### Localization
-<img width="700" alt="bright-data-google-trends-api-screenshot-set-language" src="https://github.com/luminati-io/google-trends-api/blob/main/images/418515025-d68f07f2-8a6a-46ef-942a-38b2813268dd.png" />
+<img width="700" alt="bright-data-google-trends-api-screenshot-set-language" src="https://github.com/bright-kr/google-trends-api/blob/main/images/418515025-d68f07f2-8a6a-46ef-942a-38b2813268dd.png" />
 
 `hl` パ라메ータ를 사용하면 특정 언어로 검색 트렌드 데이터를 가져올 수 있습니다:
 
@@ -342,10 +342,10 @@ curl --proxy brd.superproxy.io:33335 \
 - **Documentation**: [SERP API Docs](https://docs.brightdata.com/scraping-automation/serp-api/)
 - **SEO Use Cases**: [SEO Tracking and Insights](https://brightdata.co.kr/use-cases/serp-tracking)
 - **Additional Guides**:
-    - [SERP API](https://github.com/luminati-io/serp-api)
-    - [Google Search API](https://github.com/luminati-io/google-search-api)
-    - [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api)
-    - [Google News Scraper](https://github.com/luminati-io/Google-News-Scraper)
+    - [SERP API](https://github.com/bright-kr/serp-api)
+    - [Google Search API](https://github.com/bright-kr/google-search-api)
+    - [Web Unlocker API](https://github.com/bright-kr/web-unlocker-api)
+    - [Google News Scraper](https://github.com/bright-kr/Google-News-Scraper)
 - **Technical Articles**:
     - [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis)
     - [Build a RAG Chatbot with SERP API](https://brightdata.co.kr/blog/web-data/build-a-rag-chatbot)
