@@ -45,7 +45,7 @@ pip install playwright
 playwright install
 ```
 
-> **Webスクレイピング이 처음이신가요?** 당사의 [Python으로 하는 web scraping 초보자 가이드](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)를 따라 해보시기 바랍니다.
+> **Web스크레이핑이 처음이신가요?** 당사의 [Python으로 하는 web scraping 초보자 가이드](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)를 따라 해보시기 바랍니다.
 >
 
 ### Quick Start
@@ -79,12 +79,12 @@ hl = "en-US"              # Language code
 - IP 차단 위험이 높습니다
 - 리クエスト 볼륨이 제한적입니다
 - CAPTCHA가 자주 발생합니다
-- 대규모 スクレイピング에는 신뢰하기 어렵습니다
+- 대규모 스크레이핑에는 신뢰하기 어렵습니다
 
-신뢰할 수 있는 대규모 スクレイピング을 위해서는 더 고급 솔루션이 필요합니다.
+신뢰할 수 있는 대규모 스크레이핑을 위해서는 더 고급 솔루션이 필요합니다.
 
 ## Bright Data Enterprise Solution
-[Bright Data의 Google Trends API](https://brightdata.co.kr/products/serp-api/google-search/trends)는 사용자 지정 가능한 검색 パラメータ와 함께 구조화된 Google Trends 데이터를 제공합니다. [SERP API](https://brightdata.co.kr/products/serp-api)와 동일한 고급 기술을 기반으로 다음을 제공합니다:
+[Bright Data의 Google Trends API](https://brightdata.co.kr/products/serp-api/google-search/trends)는 사용자 지정 가능한 검색 매개변수와 함께 구조화된 Google Trends 데이터를 제공합니다. [SERP API](https://brightdata.co.kr/products/serp-api)와 동일한 고급 기술을 기반으로 다음을 제공합니다:
 
 - **글로벌 위치 정확도:** 어떤 위치에도 결과를 맞춤 설정할 수 있습니다
 - **Pay-Per-Success Model**: 성공한 리クエスト에 대해서만 비용을 지불합니다
@@ -150,7 +150,7 @@ print("Response saved to 'serp_direct_api.json'.")
 
 👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Trends-Scraper-API/blob/main/google-trends-api-results/serp_direct_api.json)을 확인하십시오.
 
-> **참고:** 파싱된 JSON을 위해 `brd_json=1`을 사용하십시오. `geo` 및 `brd_trends`와 같은 추가 パラメータ는 아래 Advanced Features 섹션에서 설명합니다.
+> **참고:** 파싱된 JSON을 위해 `brd_json=1`을 사용하십시오. `geo` 및 `brd_trends`와 같은 추가 매개변수는 아래 Advanced Features 섹션에서 설명합니다.
 > 
 
 ### Native Proxy-Based Access
@@ -203,7 +203,7 @@ print("Response saved to 'serp_native_proxy.json'.")
 ### Widgets
 <img width="700" alt="bright-data-google-trends-api-screenshot-timeseries-and-geomap" src="https://github.com/bright-kr/google-trends-api/blob/main/images/418487699-20fd3ec5-b152-4e70-bee3-b093b7d78b86.png" />
 
-Google Trends는 의미 있는 인사이트를 추출하기 위한 다양한 위젯을 제공합니다. `brd_trends` パラメータ를 사용하여 원하는 위젯을 지정할 수 있습니다:
+Google Trends는 의미 있는 인사이트를 추출하기 위한 다양한 위젯을 제공합니다. `brd_trends` 매개변수를 사용하여 원하는 위젯을 지정할 수 있습니다:
 
 **사용 가능한 위젯:**
 
